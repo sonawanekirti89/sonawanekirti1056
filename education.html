@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Education | Kirti Sonawane</title>
+<style>
+/* ---- NAVBAR ---- */
+.navbar {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+    color: cyan;
+}
+
+  /* ---------------- EDUCATION PAGE ---------------- */
+
+.education-section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #00c6ff, #8a00ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-container {
+  background: #0b0b0b;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 80px 70px;
+  color: white;
+}
+
+.education-title {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.education-title span {
+  color: #00fff0;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.edu-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(0, 255, 240, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.edu-card h3 {
+  color: #00fff0;
+  margin-bottom: 15px;
+}
+
+.edu-card p {
+  color: #ccc;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-container {
+    padding: 60px 30px;
+  }
+}
+</style>
+</head>
+<body>
+ <!-- === NAVBAR === -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+        </ul>
+    </nav>
+
+<section class="education-section">
+  <div class="education-container">
+
+    <h2 class="education-title">My <span>Education</span></h2>
+
+    <div class="education-grid">
+
+      <!-- SSC -->
+      <div class="edu-card">
+        <h3>SSC</h3>
+        <p><strong>School:</strong>M.D.T.P.VIDYALAY</p>
+        <p><strong>Board:</strong> State Board</p>
+        <p><strong>Percentage:</strong> 90%</p>
+        <p><strong>Passing Year:</strong> 2023</p>
+      </div>
+
+      <!-- HSC -->
+      <div class="edu-card">
+       
+        <h3>HSC</h3>
+        <p><strong>College:</strong>SANJIVANI JUNIOR COLLAGE</p>
+        <p><strong>Board:</strong> State Board</p>
+        <p><strong>Percentage:</strong> 75%</p>
+        <p><strong>Passing Year:</strong> 2025</p>
+      </div>
+
+      <!-- MHT CET -->
+      <div class="edu-card">
+        <h3>MHT-CET</h3>
+        <p><strong>Score / Percentile:</strong> 88.69</p>
+        <p><strong>Year:</strong> 2025</p>
+        <p>Qualified for Engineering Admission</p>
+      </div>
+
+      <!-- JEE -->
+      <div class="edu-card">
+        <h3>JEE</h3>
+        <p><strong>Score / Percentile:</strong> 64</p>
+        <p><strong>Year:</strong> 2025</p>
+        <p>National Level Engineering Entrance Exam</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

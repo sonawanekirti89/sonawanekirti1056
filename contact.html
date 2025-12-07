@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Kirti Sonawane</title>
+<style>
+/* ---- NAVBAR ---- */
+.navbar {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+    color: cyan;
+}
+
+  /* ---------------- CONTACT PAGE ---------------- */
+
+.contact-section {
+  min-height: 100vh;
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #00c6ff, #8a00ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  background: #0b0b0b;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 80px 70px;
+  color: white;
+}
+
+.contact-title {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.contact-title span {
+  color: #00fff0;
+}
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Contact Info */
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  color: #00fff0;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #ccc;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: #00fff0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Contact Form */
+
+.contact-form {
+  flex: 1;
+  background: #111;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(0, 255, 240, 0.15);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #00fff0;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    padding: 60px 30px;
+  }
+}
+</style>
+</head>
+<body>
+ <!-- === NAVBAR === -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="skills.html">skills</a></li>
+            <li><a href="contact.html">contact</a></li>
+
+        </ul>
+    </nav>
+
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <h2 class="contact-title">Contact <span>Me</span></h2>
+
+    <div class="contact-content">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Let’s Connect</h3>
+        <p>"Feel free to reach out for academic discussions, project collaborations, or learning opportunities.”</p>
+
+        <p><strong>Email:</strong> sonwanekirti89@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9371005831</p>
+        <p><strong>Location:</strong> Maharashtra, India</p>
+
+        <div class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
