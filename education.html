@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Education | Kirti Sonawane</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Education</title>
+  <style>
 /* ---- NAVBAR ---- */
 .navbar {
     padding: 20px 0;
@@ -29,86 +30,74 @@
     color: cyan;
 }
 
-  /* ---------------- EDUCATION PAGE ---------------- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #8e2de2);
+      color: white;
+    }
 
-.education-section {
-  min-height: 100vh;
-  padding: 100px 40px;
-  background: linear-gradient(135deg, #00c6ff, #8a00ff);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .container {
+      width: 85%;
+      background: #0a0a0a;
+      margin: 60px auto;
+      padding: 70px;
+      border-radius: 30px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    }
 
-.education-container {
-  background: #0b0b0b;
-  max-width: 1200px;
-  width: 100%;
-  border-radius: 30px;
-  padding: 80px 70px;
-  color: white;
-}
+    h1 span { color: #00ffe1; }
 
-.education-title {
-  font-size: 42px;
-  margin-bottom: 60px;
-}
+    .grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 50px;
+    }
 
-.education-title span {
-  color: #00fff0;
-}
+    .card {
+      background: #0f0f0f;
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+      transition: 0.3s;
+    }
 
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.35);
+    }
 
-.edu-card {
-  background: #111;
-  padding: 30px;
-  border-radius: 25px;
-  box-shadow: 0 0 25px rgba(0, 255, 240, 0.15);
-  transition: transform 0.3s ease;
-}
+    .card h2 {
+      color: #00ffe1;
+      margin-bottom: 15px;
+    }
 
-.edu-card:hover {
-  transform: translateY(-5px);
-}
+    .card p {
+      font-size: 17px;
+      margin: 8px 0;
+    }
 
-.edu-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
+    .edu-images {
+      margin-top: 60px;
+      text-align: center;
+    }
 
-.edu-card h3 {
-  color: #00fff0;
-  margin-bottom: 15px;
-}
+    .edu-images img {
+      width: 380px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 0 18px rgba(0, 255, 255, 0.3);
+      transition: 0.3s;
+    }
 
-.edu-card p {
-  color: #ccc;
-  margin-bottom: 8px;
-  font-size: 15px;
-}
-
-/* Mobile */
-@media (max-width: 900px) {
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .education-container {
-    padding: 60px 30px;
-  }
-}
-</style>
+    .edu-images img:hover { transform: scale(1.06); }
+  </style>
 </head>
 <body>
- <!-- === NAVBAR === -->
+<!-- === NAVBAR === -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -120,52 +109,51 @@
         </ul>
     </nav>
 
-<section class="education-section">
-  <div class="education-container">
 
-    <h2 class="education-title">My <span>Education</span></h2>
+  <div class="container">
+    <h1>My <span>Education</span></h1>
 
-    <div class="education-grid">
+    <div class="grid">
 
-      <!-- SSC -->
-      <div class="edu-card">
-        <h3>SSC</h3>
-        <p><strong>School:</strong>M.D.T.P.VIDYALAY</p>
-        <p><strong>Board:</strong> State Board</p>
-        <p><strong>Percentage:</strong> 90%</p>
-        <p><strong>Passing Year:</strong> 2023</p>
+      <div class="card">
+        <h2>SSC</h2>
+        <p><b>School:</b> M.D.T.P. VIDYALAY</p>
+        <p><b>Board:</b> State Board</p>
+        <p><b>Percentage:</b> 90%</p>
+        <p><b>Passing Year:</b> 2023</p>
       </div>
 
-      <!-- HSC -->
-      <div class="edu-card">
-       
-        <h3>HSC</h3>
-        <p><strong>College:</strong>SANJIVANI JUNIOR COLLAGE</p>
-        <p><strong>Board:</strong> State Board</p>
-        <p><strong>Percentage:</strong> 75%</p>
-        <p><strong>Passing Year:</strong> 2025</p>
+      <div class="card">
+        <h2>HSC</h2>
+        <p><b>College:</b> SANJIVANI JUNIOR COLLEGE</p>
+        <p><b>Board:</b> State Board</p>
+        <p><b>Percentage:</b> 75%</p>
+        <p><b>Passing Year:</b> 2025</p>
       </div>
 
-      <!-- MHT CET -->
-      <div class="edu-card">
-        <h3>MHT-CET</h3>
-        <p><strong>Score / Percentile:</strong> 88.69</p>
-        <p><strong>Year:</strong> 2025</p>
+      <div class="card">
+        <h2>MHT-CET</h2>
+        <p><b>Score / Percentile:</b> 88.69</p>
+        <p><b>Year:</b> 2025</p>
         <p>Qualified for Engineering Admission</p>
       </div>
 
-      <!-- JEE -->
-      <div class="edu-card">
-        <h3>JEE</h3>
-        <p><strong>Score / Percentile:</strong> 64</p>
-        <p><strong>Year:</strong> 2025</p>
+      <div class="card">
+        <h2>JEE</h2>
+        <p><b>Score / Percentile:</b> 64</p>
+        <p><b>Year:</b> 2025</p>
         <p>National Level Engineering Entrance Exam</p>
       </div>
 
     </div>
 
+    <div class="edu-images">
+      <h2>My School & College</h2>
+      <img src="school.jpg" alt="School Image" />
+      <img src="college.jpg" alt="College Image" />
+    </div>
+
   </div>
-</section>
 
 </body>
 </html>
