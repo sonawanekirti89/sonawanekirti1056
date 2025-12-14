@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Kirti Sonawane</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+
 <style>
 /* ---- NAVBAR ---- */
 .navbar {
@@ -29,120 +31,66 @@
     color: cyan;
 }
 
-  /* ---------------- CONTACT PAGE ---------------- */
 
-.contact-section {
-  min-height: 100vh;
-  padding: 100px 40px;
-  background: linear-gradient(135deg, #00c6ff, #8a00ff);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #00c6ff, #8e2de2);
+        color: white;
+    }
 
-.contact-container {
-  background: #0b0b0b;
-  max-width: 1200px;
-  width: 100%;
-  border-radius: 30px;
-  padding: 80px 70px;
-  color: white;
-}
+    .container {
+        width: 85%;
+        margin: 60px auto;
+        background: #0a0a0a;
+        padding: 70px;
+        border-radius: 30px;
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    }
 
-.contact-title {
-  font-size: 42px;
-  margin-bottom: 60px;
-}
+    h1 span {
+        color: #00ffe1;
+    }
 
-.contact-title span {
-  color: #00fff0;
-}
+    .info-box {
+        margin-top: 40px;
+        background: #0f0f0f;
+        padding: 40px;
+        border-radius: 25px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    }
 
-.contact-content {
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
-}
+    .row {
+        display: flex;
+        align-items: center;
+        margin: 18px 0;
+        font-size: 20px;
+    }
 
-/* Contact Info */
+    .row i {
+        font-size: 25px;
+        color: #00ffe1;
+        margin-right: 15px;
+    }
 
-.contact-info {
-  flex: 1;
-}
+    a {
+        color: #00ffe1;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-.contact-info h3 {
-  color: #00fff0;
-  margin-bottom: 15px;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
-.contact-info p {
-  color: #ccc;
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.social-links a {
-  display: inline-block;
-  margin-right: 15px;
-  margin-top: 15px;
-  color: #00fff0;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Contact Form */
-
-.contact-form {
-  flex: 1;
-  background: #111;
-  padding: 30px;
-  border-radius: 25px;
-  box-shadow: 0 0 25px rgba(0, 255, 240, 0.15);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background: #222;
-  color: white;
-  font-size: 14px;
-}
-
-.contact-form textarea {
-  resize: none;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-  background: #00fff0;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Mobile */
-
-@media (max-width: 900px) {
-  .contact-content {
-    flex-direction: column;
-  }
-
-  .contact-container {
-    padding: 60px 30px;
-  }
-}
 </style>
+
+<!-- Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 </head>
 <body>
- <!-- === NAVBAR === -->
+<!-- === NAVBAR === -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -150,47 +98,53 @@
             <li><a href="education.html">education</a></li>
             <li><a href="skills.html">skills</a></li>
             <li><a href="contact.html">contact</a></li>
+             
+
+
 
         </ul>
     </nav>
 
+    
+<div class="container">
+    <h1>Contact <span>Me</span></h1>
 
-<section class="contact-section">
-  <div class="contact-container">
+    <div class="info-box">
 
-    <h2 class="contact-title">Contact <span>Me</span></h2>
-
-    <div class="contact-content">
-
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <h3>Let’s Connect</h3>
-        <p>"Feel free to reach out for academic discussions, project collaborations, or learning opportunities.”</p>
-
-        <p><strong>Email:</strong> sonwanekirti89@gmail.com</p>
-        <p><strong>Phone:</strong> +91-9371005831</p>
-        <p><strong>Location:</strong> Maharashtra, India</p>
-
-        <div class="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Instagram</a>
+        <div class="row">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email: <a href="mailto:sonwanekirti89@gmail.com">sonwanekirti89@gmail.com</a></span>
         </div>
-      </div>
 
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+        <div class="row">
+            <i class="fa-solid fa-phone"></i>
+            <span>Phone: <a href="tel:+919371005831">+91-9371005831</a></span>
+        </div>
+
+        <div class="row">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Location: Maharashtra, India</span>
+        </div>
+
+        <div class="row">
+            <i class="fa-brands fa-linkedin"></i>
+            <span><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></span>
+        </div>
+
+        <div class="row">
+            <i class="fa-brands fa-instagram"></i>
+            <span><a href="https://www.instagram.com" target="_blank">Instagram</a></span>
+        </div>
+
+        <div class="row">
+            <i class="fa-brands fa-github"></i>
+            <span><a href="https://github.com" target="_blank">GitHub</a></span>
+        </div>
 
     </div>
-  </div>
-</section>
+
+</div>
 
 </body>
 </html>
+
